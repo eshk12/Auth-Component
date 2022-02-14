@@ -1,4 +1,4 @@
-package Entity;
+package com.itzikbarabie.moni.Entity;
 
 public class ExceptionResponseEntity {
     private String error;

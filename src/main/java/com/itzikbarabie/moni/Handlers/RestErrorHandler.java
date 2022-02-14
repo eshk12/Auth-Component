@@ -1,6 +1,6 @@
 package com.itzikbarabie.moni.Handlers;
 
-import Entity.ExceptionResponseEntity;
+import com.itzikbarabie.moni.Entity.ExceptionResponseEntity;
 import com.itzikbarabie.moni.Exceptions.CustomException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
