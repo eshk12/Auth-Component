@@ -7,8 +7,6 @@ import java.util.List;
 
 public interface UserService {
 
-    void isValidObject(User user) throws CustomException;
-
     User addUser(User user) throws CustomException;
 
     User updateUser(User user) throws CustomException;

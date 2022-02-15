@@ -4,7 +4,6 @@ import com.itzikbarabie.moni.Model.User;
 import com.itzikbarabie.moni.Exceptions.CustomException;
 import com.itzikbarabie.moni.Services.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,14 +17,16 @@ public class UserController {
 
 
     @PostMapping("/createUser")
-    public ResponseEntity<?> createUser(@RequestBody User user) {
+    public ResponseEntity<User> createUser(@RequestBody User user) {
+        user.setPermission(0);
+        user.setTokens(null);
+        user.setDeleted(false);
         try{
             return ResponseEntity.ok()
                     .body(userService.addUser(user));
         } catch (CustomException e){
             throw new CustomException(e.getMessage());
         }
-
     }
 
     @GetMapping("/getAll")

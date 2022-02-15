@@ -4,6 +4,9 @@ import com.itzikbarabie.moni.Model.User;
 import com.itzikbarabie.moni.Exceptions.CustomException;
 import com.itzikbarabie.moni.Repository.UserRepository;
 import com.itzikbarabie.moni.Utils.ErrorMessages;
+import com.itzikbarabie.moni.Utils.PasswordManager;
+import com.itzikbarabie.moni.Utils.Validator;
+import com.itzikbarabie.moni.Utils.objectValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,25 +18,21 @@ public class UserServiceImpl implements UserService{
     private UserRepository userRepository;
     @Autowired
     private ErrorMessages errorMessages;
-
-    public void isValidObject(User user) throws CustomException {
-        if(user.getEmail() != null && user.getPassword() != null) {
-            if(user.getEmail().isEmpty() || user.getPassword().isEmpty())
-                throw new CustomException(errorMessages.MISSING_FIELDS);
-        }else{
-            throw new CustomException(errorMessages.MISSING_FIELDS);
-        }
-    }
+    @Autowired
+    private PasswordManager passwordManager;
+    @Autowired
+    private objectValidator objectValidator;
 
     @Override
     public User addUser(User user) throws CustomException {
-        this.isValidObject(user);
+        objectValidator.isValidUserObject(user);
         Iterable<User> users = this.userRepository.findAll();
         for (User item : users) {
             if (user.getEmail().equals(item.getEmail())) {
                 throw new CustomException(errorMessages.EMAIL_IS_ALREADY_REGISTERED);
             }
         }
+        user.setPassword(passwordManager.hashPassword(user.getPassword()));
         userRepository.save(user);
         return userRepository.findUserByEmailAndAndPassword(user.getEmail(), user.getPassword());
     }
@@ -43,7 +42,9 @@ public class UserServiceImpl implements UserService{
         if(!userRepository.existsByUserId(user.getUserId())){
             throw new CustomException(errorMessages.USER_IS_NOT_EXISTS);
         }else{
-            userRepository.saveAndFlush(user);
+            User userToSave = userRepository.findUserByUserId(user.getUserId());
+            userToSave.setObject(user);
+            userRepository.save(userToSave);
         }
         return userRepository.findUserByUserId(user.getUserId());
     }

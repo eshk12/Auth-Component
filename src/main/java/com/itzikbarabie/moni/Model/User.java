@@ -1,16 +1,25 @@
 package com.itzikbarabie.moni.Model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
+
 import javax.persistence.*;
+import java.util.Date;
+import java.util.List;
 
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 @Table(name="users")
-public class User {
+public class User extends BaseEntity{
 
-    @Id
-    @Column(name="userID")
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long userId;
+    @Column(name="userId")
+    private String userId;
 
     @Column(name="email")
     private String email;
@@ -18,27 +27,22 @@ public class User {
     @Column(name="password")
     private String password;
 
-    public long getUserId() {
-        return userId;
-    }
+    @Column(name="tokens", insertable = false)
+    @ElementCollection(targetClass=String.class)
+    private List<String> tokens;
 
-    public void setUserId(long userId) {
-        this.userId = userId;
-    }
+    @Column(name="firstName")
+    private String firstName;
 
-    public String getEmail() {
-        return email;
-    }
+    @Column(name="lastName")
+    private String lastName;
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+    @Column(name="permission", insertable = false, columnDefinition="tinyint(1) default 0")
+    private Integer permission;
 
-    public String getPassword() {
-        return password;
-    }
+    @Column(name="expirationDate", insertable = false)
+    @CreationTimestamp
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date expirationDate;
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }
