@@ -41,7 +41,8 @@ public class User extends BaseEntity{
 
     @Column(name="expirationDate")
     @CreationTimestamp
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date expirationDate;
+    private Timestamp expirationDate;
+
+
 
 }

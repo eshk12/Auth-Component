@@ -9,6 +9,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
 import java.lang.reflect.Field;
+import java.time.Instant;
 import java.util.Date;
 
 @MappedSuperclass
@@ -22,19 +23,16 @@ public abstract class BaseEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long objectId;
 
-    @Column(name="createdDate", updatable = false, columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
+    @Column(name="createdDate", updatable = false/*, columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP"*/)
     @CreationTimestamp
-    @Temporal(TemporalType.TIMESTAMP)
     private Date createdDate;
 
-    @Column(name="updatedDate", columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
+    @Column(name="updatedDate"/*, columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP"*/)
     @UpdateTimestamp
-    @Temporal(TemporalType.TIMESTAMP)
     private Date updatedDate;
 
     @Column(name="deleted", columnDefinition = "boolean default false")
     private boolean deleted;
-
 
     public void setObject(Object other) {
         try {
@@ -56,5 +54,4 @@ public abstract class BaseEntity {
             e.printStackTrace();
         }
     }
-
 }
