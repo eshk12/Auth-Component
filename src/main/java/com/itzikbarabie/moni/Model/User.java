@@ -2,12 +2,15 @@ package com.itzikbarabie.moni.Model;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
@@ -27,20 +30,16 @@ public class User extends BaseEntity{
     @Column(name="password")
     private String password;
 
-    @Column(name="tokens", insertable = false)
-    @ElementCollection(targetClass=String.class)
-    private List<String> tokens;
-
     @Column(name="firstName")
     private String firstName;
 
     @Column(name="lastName")
     private String lastName;
 
-    @Column(name="permission", insertable = false, columnDefinition="tinyint(1) default 0")
-    private Integer permission;
+    @Column(name="permission", columnDefinition="tinyint(1) default 0")
+    private int permission;
 
-    @Column(name="expirationDate", insertable = false)
+    @Column(name="expirationDate")
     @CreationTimestamp
     @Temporal(TemporalType.TIMESTAMP)
     private Date expirationDate;

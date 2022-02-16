@@ -22,18 +22,19 @@ public abstract class BaseEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long objectId;
 
-    @Column(name="createdDate", updatable = false)
+    @Column(name="createdDate", updatable = false, columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     @CreationTimestamp
     @Temporal(TemporalType.TIMESTAMP)
     private Date createdDate;
 
-    @Column(name="updatedDate")
+    @Column(name="updatedDate", columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     @UpdateTimestamp
     @Temporal(TemporalType.TIMESTAMP)
     private Date updatedDate;
 
-    @Column(name="deleted", columnDefinition = "boolean default false", insertable = false)
+    @Column(name="deleted", columnDefinition = "boolean default false")
     private boolean deleted;
+
 
     public void setObject(Object other) {
         try {

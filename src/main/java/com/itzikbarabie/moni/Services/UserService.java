@@ -1,22 +1,24 @@
 package com.itzikbarabie.moni.Services;
 
+import com.itzikbarabie.moni.Entity.BasicResponseModel;
 import com.itzikbarabie.moni.Model.User;
 import com.itzikbarabie.moni.Exceptions.CustomException;
+import com.itzikbarabie.moni.Model.UserDto;
 
 import java.util.List;
 
 public interface UserService {
 
-    User addUser(User user) throws CustomException;
+    UserDto addUser(UserDto UserDto) throws CustomException;
 
-    User updateUser(User user) throws CustomException;
+    UserDto updateUser(UserDto userDto) throws CustomException;
 
-    void deleteUser(long userId) throws CustomException;
+    BasicResponseModel deleteUserByObjectId(long objectId, boolean deleted) throws CustomException;
 
-    List<User> getAllUsers();
+    List<UserDto> getAllUsers();
 
-    User findUserById(long userId) throws CustomException;
+    UserDto findUserByObjectId(long objectId) throws CustomException;
 
-    User findUserByEmail(String email) throws CustomException;
+    UserDto findUserByEmail(String email) throws CustomException;
 
 }
