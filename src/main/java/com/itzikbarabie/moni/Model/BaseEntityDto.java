@@ -18,11 +18,4 @@ public abstract class BaseEntityDto {
     private Date updatedDate;
     private boolean deleted;
 
-    public long getCreatedDate() {
-        return createdDate.getTime();
-    }
-
-    public long getUpdatedDate() {
-        return updatedDate.getTime();
-    }
 }

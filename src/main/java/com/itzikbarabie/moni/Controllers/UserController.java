@@ -63,11 +63,11 @@ public class UserController {
         }
     }
 
-    @GetMapping("/getUserByEmail")
+    @GetMapping("/getUserByUsername")
     public ResponseEntity<?> getUserByEmail(@RequestBody User user){
         try{
             return ResponseEntity.ok()
-                    .body(userService.findUserByEmail(user.getEmail()));
+                    .body(userService.findUserByUsername(user.getUsername()));
         }catch (CustomException e){
             throw new CustomException(e.getMessage());
         }

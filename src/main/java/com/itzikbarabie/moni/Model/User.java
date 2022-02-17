@@ -21,10 +21,13 @@ import java.util.List;
 @Table(name="users")
 public class User extends BaseEntity{
 
-    @Column(name="userId")
+    @Column(name="userId", unique = true)
     private String userId;
 
-    @Column(name="email")
+    @Column(name="username", unique = true)
+    private String username;
+
+    @Column(name="email", unique = true)
     private String email;
 
     @Column(name="password")

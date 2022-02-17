@@ -7,6 +7,7 @@ import java.util.Map;
 @Component
 public class Definitions {
     public String EMAIL_IS_ALREADY_REGISTERED = "The email is already registered!";
+    public String USERNAME_IS_ALREADY_REGISTERED = "The username is already registered!";
     public String USER_ID_IS_ALREADY_REGISTERED = "The userid is already registered!";
     public String USER_IS_NOT_EXISTS = "The user is not exists!";
     public String MISSING_FIELDS = "There are missing fields!";

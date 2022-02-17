@@ -10,6 +10,7 @@ import com.itzikbarabie.moni.Utils.PasswordManager;
 import com.itzikbarabie.moni.Utils.ObjectValidator;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -27,7 +28,8 @@ public class UserServiceImpl implements UserService {
     private ObjectValidator objectValidator;
     @Autowired
     private ModelMapper modelMapper;
-
+    @Autowired
+    private PasswordEncoder bcryptEncoder;
 
     @Override
     public UserDto addUser(UserDto userDto) throws CustomException {
@@ -38,13 +40,16 @@ public class UserServiceImpl implements UserService {
             if(user.getUserId().equals(item.getUserId())){
                 throw new CustomException(definitions.USER_ID_IS_ALREADY_REGISTERED);
             }
+            if(user.getUsername().equals(item.getUsername())){
+                throw new CustomException(definitions.USERNAME_IS_ALREADY_REGISTERED);
+            }
             if (user.getEmail().equals(item.getEmail())) {
                 throw new CustomException(definitions.EMAIL_IS_ALREADY_REGISTERED);
             }
         }
-        user.setPassword(passwordManager.hashPassword(user.getPassword()));
+        user.setPassword(bcryptEncoder.encode(user.getPassword()));
         userRepository.save(user);
-        return this.convertToDtoRestricted(userRepository.findUserByEmailAndAndPassword(user.getEmail(), user.getPassword()));
+        return this.convertToDtoRestricted(user);
     }
 
     @Override
@@ -57,7 +62,6 @@ public class UserServiceImpl implements UserService {
             userRepository.save(userToSave);
             return this.convertToDtoRestricted(userToSave);
         }
-
     }
 
     @Override
@@ -89,11 +93,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserDto findUserByEmail(String email) throws CustomException {
-        if (!userRepository.existsByEmail(email)) {
+    public UserDto findUserByUsername(String username) throws CustomException {
+        if (!userRepository.existsByUsername(username)) {
             throw new CustomException(definitions.USER_IS_NOT_EXISTS);
         } else {
-            return this.convertToDtoRestricted(userRepository.findUserByEmail(email));
+            return this.convertToDtoRestricted(userRepository.findUserByUsername(username));
         }
     }
 

@@ -3,6 +3,7 @@ package com.itzikbarabie.moni.Handlers;
 import com.itzikbarabie.moni.Entity.ExceptionResponseEntity;
 import com.itzikbarabie.moni.Exceptions.CustomException;
 import com.itzikbarabie.moni.Exceptions.UnauthorizedException;
+import io.jsonwebtoken.SignatureException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;

@@ -19,6 +19,6 @@ public interface UserService {
 
     UserDto findUserByObjectId(long objectId) throws CustomException;
 
-    UserDto findUserByEmail(String email) throws CustomException;
+    UserDto findUserByUsername(String username) throws CustomException;
 
 }
