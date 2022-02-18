@@ -31,8 +31,8 @@ public abstract class BaseEntity {
     @UpdateTimestamp
     private Date updatedDate;
 
-    @Column(name="deleted", columnDefinition = "boolean default false")
-    private boolean deleted;
+    @Column(name="active", columnDefinition = "boolean default false")
+    private boolean active;
 
     public void setObject(Object other) {
         try {

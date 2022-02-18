@@ -7,10 +7,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
@@ -19,7 +24,7 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 @Table(name="users")
-public class User extends BaseEntity{
+public class User extends BaseEntity {
 
     @Column(name="userId", unique = true)
     private String userId;
@@ -39,13 +44,11 @@ public class User extends BaseEntity{
     @Column(name="lastName")
     private String lastName;
 
-    @Column(name="permission", columnDefinition="tinyint(1) default 0")
-    private int permission;
-
     @Column(name="expirationDate")
     @CreationTimestamp
     private Timestamp expirationDate;
 
-
+    @Column(name="roles")
+    private String roles;
 
 }

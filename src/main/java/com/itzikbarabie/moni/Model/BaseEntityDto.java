@@ -16,6 +16,6 @@ public abstract class BaseEntityDto {
     private long objectId;
     private Date createdDate;
     private Date updatedDate;
-    private boolean deleted;
+    private boolean active;
 
 }

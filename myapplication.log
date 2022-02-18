@@ -1,0 +1,651 @@
+2022-02-18 02:05:58.527  INFO 22612 --- [main] com.itzikbarabie.moni.MoniApplication    : Starting MoniApplication using Java 16.0.1 on LAPTOP-B76CQGAO with PID 22612 (C:\Users\97252\Desktop\moni\moni\target\classes started by 97252 in C:\Users\97252\Desktop\moni\moni)
+2022-02-18 02:05:58.529  INFO 22612 --- [main] com.itzikbarabie.moni.MoniApplication    : No active profile set, falling back to default profiles: default
+2022-02-18 02:05:59.081  INFO 22612 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-18 02:05:59.133  INFO 22612 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2022-02-18 02:05:59.575  INFO 22612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-18 02:05:59.583  INFO 22612 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-18 02:05:59.583  INFO 22612 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 02:05:59.670  INFO 22612 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-18 02:05:59.670  INFO 22612 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1101 ms
+2022-02-18 02:05:59.971  INFO 22612 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-18 02:06:00.078  INFO 22612 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-18 02:06:00.524  INFO 22612 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-18 02:06:00.799  WARN 22612 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 02:06:00.917  INFO 22612 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3691d4da, org.springframework.security.web.context.SecurityContextPersistenceFilter@336070ab, org.springframework.security.web.header.HeaderWriterFilter@56dde9f7, org.springframework.security.web.authentication.logout.LogoutFilter@2c4be45f, com.itzikbarabie.moni.Security.JwtRequestFilter@36330be8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6be80629, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@433b546f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c91a008, org.springframework.security.web.session.SessionManagementFilter@516037be, org.springframework.security.web.access.ExceptionTranslationFilter@4eb5764d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@343727b5]
+2022-02-18 02:06:00.995 DEBUG 22612 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-18 02:06:01.038 DEBUG 22612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2022-02-18 02:06:01.060 DEBUG 22612 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-18 02:06:01.067 DEBUG 22612 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-18 02:06:01.187  INFO 22612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-18 02:06:01.198  INFO 22612 --- [main] com.itzikbarabie.moni.MoniApplication    : Started MoniApplication in 2.965 seconds (JVM running for 3.649)
+2022-02-18 02:06:20.677  INFO 27632 --- [main] com.itzikbarabie.moni.MoniApplication    : Starting MoniApplication using Java 16.0.1 on LAPTOP-B76CQGAO with PID 27632 (C:\Users\97252\Desktop\moni\moni\target\classes started by 97252 in C:\Users\97252\Desktop\moni\moni)
+2022-02-18 02:06:20.679  INFO 27632 --- [main] com.itzikbarabie.moni.MoniApplication    : No active profile set, falling back to default profiles: default
+2022-02-18 02:06:21.163  INFO 27632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-18 02:06:21.202  INFO 27632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces.
+2022-02-18 02:06:21.537  INFO 27632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-18 02:06:21.545  INFO 27632 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-18 02:06:21.545  INFO 27632 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 02:06:21.629  INFO 27632 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-18 02:06:21.629  INFO 27632 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 916 ms
+2022-02-18 02:06:21.916  INFO 27632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-18 02:06:21.993  INFO 27632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-18 02:06:22.373  INFO 27632 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-18 02:06:22.605  WARN 27632 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 02:06:22.719  INFO 27632 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@716e6fa5, org.springframework.security.web.context.SecurityContextPersistenceFilter@5dd6f517, org.springframework.security.web.header.HeaderWriterFilter@6bf28f61, org.springframework.security.web.authentication.logout.LogoutFilter@362b384c, com.itzikbarabie.moni.Security.JwtRequestFilter@4d0abb23, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59a3eaf7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33bfe6d3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@91a1005, org.springframework.security.web.session.SessionManagementFilter@2dcd451f, org.springframework.security.web.access.ExceptionTranslationFilter@3a5e4f32, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@65b680b4]
+2022-02-18 02:06:22.796 DEBUG 27632 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-18 02:06:22.836 DEBUG 27632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2022-02-18 02:06:22.853 DEBUG 27632 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-18 02:06:22.859 DEBUG 27632 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-18 02:06:22.959  INFO 27632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-18 02:06:22.967  INFO 27632 --- [main] com.itzikbarabie.moni.MoniApplication    : Started MoniApplication in 2.782 seconds (JVM running for 3.682)
+2022-02-18 02:06:37.888  INFO 19304 --- [main] com.itzikbarabie.moni.MoniApplication    : Starting MoniApplication using Java 16.0.1 on LAPTOP-B76CQGAO with PID 19304 (C:\Users\97252\Desktop\moni\moni\target\classes started by 97252 in C:\Users\97252\Desktop\moni\moni)
+2022-02-18 02:06:37.892  INFO 19304 --- [main] com.itzikbarabie.moni.MoniApplication    : No active profile set, falling back to default profiles: default
+2022-02-18 02:06:38.432  INFO 19304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-18 02:06:38.476  INFO 19304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interfaces.
+2022-02-18 02:06:38.828  INFO 19304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-18 02:06:38.835  INFO 19304 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-18 02:06:38.835  INFO 19304 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 02:06:38.926  INFO 19304 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-18 02:06:38.927  INFO 19304 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 992 ms
+2022-02-18 02:06:39.267  INFO 19304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-18 02:06:39.345  INFO 19304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-18 02:06:39.743  INFO 19304 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-18 02:06:40.054  WARN 19304 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 02:06:40.253  INFO 19304 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25e353dc, org.springframework.security.web.context.SecurityContextPersistenceFilter@55b45ea1, org.springframework.security.web.header.HeaderWriterFilter@127d2aee, org.springframework.security.web.authentication.logout.LogoutFilter@2ccecae2, com.itzikbarabie.moni.Security.JwtRequestFilter@5bccaedb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45f95ac0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52035328, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@234ce7ff, org.springframework.security.web.session.SessionManagementFilter@b787274, org.springframework.security.web.access.ExceptionTranslationFilter@5bdb6ea8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@53c40ed6]
+2022-02-18 02:06:40.363 DEBUG 19304 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-18 02:06:40.417 DEBUG 19304 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2022-02-18 02:06:40.446 DEBUG 19304 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-18 02:06:40.453 DEBUG 19304 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-18 02:06:40.566  INFO 19304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-18 02:06:40.576  INFO 19304 --- [main] com.itzikbarabie.moni.MoniApplication    : Started MoniApplication in 3.042 seconds (JVM running for 3.589)
+2022-02-18 02:12:53.767  INFO 22712 --- [main] com.itzikbarabie.moni.MoniApplication    : Starting MoniApplication using Java 16.0.1 on LAPTOP-B76CQGAO with PID 22712 (C:\Users\97252\Desktop\moni\moni\target\classes started by 97252 in C:\Users\97252\Desktop\moni\moni)
+2022-02-18 02:12:53.770  INFO 22712 --- [main] com.itzikbarabie.moni.MoniApplication    : No active profile set, falling back to default profiles: default
+2022-02-18 02:12:54.317  INFO 22712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-18 02:12:54.362  INFO 22712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interfaces.
+2022-02-18 02:12:54.728  INFO 22712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-18 02:12:54.734  INFO 22712 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-18 02:12:54.735  INFO 22712 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 02:12:54.816  INFO 22712 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-18 02:12:54.817  INFO 22712 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1009 ms
+2022-02-18 02:12:55.154  INFO 22712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-18 02:12:55.232  INFO 22712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-18 02:12:55.658  INFO 22712 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-18 02:12:55.912  WARN 22712 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 02:12:56.047  INFO 22712 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b278b17, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c418496, org.springframework.security.web.header.HeaderWriterFilter@3a589eed, org.springframework.security.web.authentication.logout.LogoutFilter@5cc075da, com.itzikbarabie.moni.Security.JwtRequestFilter@6c2dd88b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1df32c09, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@749ee0e3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ae5580, org.springframework.security.web.session.SessionManagementFilter@45f95ac0, org.springframework.security.web.access.ExceptionTranslationFilter@127d2aee, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ea0a7a9]
+2022-02-18 02:12:56.130 DEBUG 22712 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-18 02:12:56.172 DEBUG 22712 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2022-02-18 02:12:56.195 DEBUG 22712 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-18 02:12:56.204 DEBUG 22712 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-18 02:12:56.300  INFO 22712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-18 02:12:56.307  INFO 22712 --- [main] com.itzikbarabie.moni.MoniApplication    : Started MoniApplication in 2.889 seconds (JVM running for 3.431)
+2022-02-18 02:16:32.502  INFO 16140 --- [main] com.itzikbarabie.moni.MoniApplication    : Starting MoniApplication using Java 16.0.1 on LAPTOP-B76CQGAO with PID 16140 (C:\Users\97252\Desktop\moni\moni\target\classes started by 97252 in C:\Users\97252\Desktop\moni\moni)
+2022-02-18 02:16:32.505  INFO 16140 --- [main] com.itzikbarabie.moni.MoniApplication    : No active profile set, falling back to default profiles: default
+2022-02-18 02:16:33.013  INFO 16140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-18 02:16:33.056  INFO 16140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2022-02-18 02:16:33.468  INFO 16140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-18 02:16:33.475  INFO 16140 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-18 02:16:33.476  INFO 16140 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 02:16:33.579  INFO 16140 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-18 02:16:33.579  INFO 16140 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1040 ms
+2022-02-18 02:16:33.933  INFO 16140 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-18 02:16:34.020  INFO 16140 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-18 02:16:34.417  INFO 16140 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-18 02:16:34.656  WARN 16140 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 02:16:34.774  INFO 16140 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@541897c6, org.springframework.security.web.context.SecurityContextPersistenceFilter@8d7718e, org.springframework.security.web.header.HeaderWriterFilter@9de1b85, org.springframework.security.web.authentication.logout.LogoutFilter@350e3fb4, com.itzikbarabie.moni.Security.JwtRequestFilter@718ad3a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f9de1fd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4be7acd9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ad558bf, org.springframework.security.web.session.SessionManagementFilter@37b470df, org.springframework.security.web.access.ExceptionTranslationFilter@282c5075, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4e4af370]
+2022-02-18 02:16:34.856 DEBUG 16140 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-18 02:16:34.897 DEBUG 16140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2022-02-18 02:16:34.920 DEBUG 16140 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-18 02:16:34.927 DEBUG 16140 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-18 02:16:35.029  INFO 16140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-18 02:16:35.036  INFO 16140 --- [main] com.itzikbarabie.moni.MoniApplication    : Started MoniApplication in 2.84 seconds (JVM running for 3.786)
+2022-02-18 02:17:37.356  INFO 24764 --- [main] com.itzikbarabie.moni.MoniApplication    : Starting MoniApplication using Java 16.0.1 on LAPTOP-B76CQGAO with PID 24764 (C:\Users\97252\Desktop\moni\moni\target\classes started by 97252 in C:\Users\97252\Desktop\moni\moni)
+2022-02-18 02:17:37.360  INFO 24764 --- [main] com.itzikbarabie.moni.MoniApplication    : No active profile set, falling back to default profiles: default
+2022-02-18 02:17:37.900  INFO 24764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-18 02:17:37.945  INFO 24764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interfaces.
+2022-02-18 02:17:38.292  INFO 24764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-18 02:17:38.300  INFO 24764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-18 02:17:38.300  INFO 24764 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 02:17:38.392  INFO 24764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-18 02:17:38.393  INFO 24764 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 994 ms
+2022-02-18 02:17:38.713  INFO 24764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-18 02:17:38.809  INFO 24764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-18 02:17:39.217  INFO 24764 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-18 02:17:39.460  WARN 24764 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 02:17:39.592  INFO 24764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a80a896, org.springframework.security.web.context.SecurityContextPersistenceFilter@20163008, org.springframework.security.web.header.HeaderWriterFilter@20a4cba7, org.springframework.security.web.authentication.logout.LogoutFilter@575c23f1, com.itzikbarabie.moni.Security.JwtRequestFilter@3d02ff64, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3436d3d7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f9de1fd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13c81bc5, org.springframework.security.web.session.SessionManagementFilter@19d9ba89, org.springframework.security.web.access.ExceptionTranslationFilter@383e6734, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1cca3e8c]
+2022-02-18 02:17:39.688 DEBUG 24764 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-18 02:17:39.723 DEBUG 24764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2022-02-18 02:17:39.749 DEBUG 24764 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-18 02:17:39.756 DEBUG 24764 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-18 02:17:39.847  INFO 24764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-18 02:17:39.856  INFO 24764 --- [main] com.itzikbarabie.moni.MoniApplication    : Started MoniApplication in 2.798 seconds (JVM running for 3.782)
+2022-02-18 02:17:59.407  INFO 24764 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-18 02:17:59.407  INFO 24764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-18 02:17:59.408 DEBUG 24764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-02-18 02:17:59.408 DEBUG 24764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-02-18 02:17:59.408 DEBUG 24764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-02-18 02:17:59.409 DEBUG 24764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4b20aa21
+2022-02-18 02:17:59.409 DEBUG 24764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@66a93b25
+2022-02-18 02:17:59.409 DEBUG 24764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-02-18 02:17:59.409  INFO 24764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-02-18 02:17:59.430 DEBUG 24764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
+2022-02-18 02:17:59.434 DEBUG 24764 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.itzikbarabie.moni.Controllers.AuthController#login(AuthenticationRequest)
+2022-02-18 02:17:59.496 DEBUG 24764 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthenticationRequest(username=esh3k12, password=123456)]
+2022-02-18 02:17:59.741  INFO 24764 --- [http-nio-8080-exec-1] c.i.m.Services.AuthenticateServiceImpl   : ~Authenticate: User Not Found!
+2022-02-18 02:17:59.861 DEBUG 24764 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.itzikbarabie.moni.Handlers.RestErrorHandler#handleCustomException(Exception)
+2022-02-18 02:17:59.862  INFO 24764 --- [http-nio-8080-exec-1] c.i.moni.Handlers.RestErrorHandler       : com.itzikbarabie.moni.Controllers.AuthController.login(AuthController.java:42) Has Retreive an a exception: Invalid details!
+2022-02-18 02:17:59.877 DEBUG 24764 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-02-18 02:17:59.877 DEBUG 24764 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.itzikbarabie.moni.Entity.ExceptionResponseEntity@4f00f92e]
+2022-02-18 02:17:59.890 DEBUG 24764 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.itzikbarabie.moni.Exceptions.UnauthorizedException: Invalid details!]
+2022-02-18 02:17:59.891 DEBUG 24764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2022-02-18 02:18:46.206  INFO 27520 --- [main] com.itzikbarabie.moni.MoniApplication    : Starting MoniApplication using Java 16.0.1 on LAPTOP-B76CQGAO with PID 27520 (C:\Users\97252\Desktop\moni\moni\target\classes started by 97252 in C:\Users\97252\Desktop\moni\moni)
+2022-02-18 02:18:46.208  INFO 27520 --- [main] com.itzikbarabie.moni.MoniApplication    : No active profile set, falling back to default profiles: default
+2022-02-18 02:18:46.769  INFO 27520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-18 02:18:46.813  INFO 27520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+2022-02-18 02:18:47.224  INFO 27520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-18 02:18:47.232  INFO 27520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-18 02:18:47.232  INFO 27520 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 02:18:47.324  INFO 27520 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-18 02:18:47.325  INFO 27520 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1068 ms
+2022-02-18 02:18:47.479  INFO 27520 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-18 02:18:47.514  INFO 27520 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-18 02:18:47.618  INFO 27520 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-18 02:18:47.674  INFO 27520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-18 02:18:47.767  INFO 27520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-18 02:18:47.782  INFO 27520 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-02-18 02:18:48.179  INFO 27520 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-18 02:18:48.187  INFO 27520 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-18 02:18:48.442  WARN 27520 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 02:18:48.594  INFO 27520 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59d0fac9, org.springframework.security.web.context.SecurityContextPersistenceFilter@5dc9d25a, org.springframework.security.web.header.HeaderWriterFilter@68550d86, org.springframework.security.web.authentication.logout.LogoutFilter@40fee459, com.itzikbarabie.moni.Security.JwtRequestFilter@7a8b7e11, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c4be45f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c8d8b60, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d3546f9, org.springframework.security.web.session.SessionManagementFilter@7c871ce4, org.springframework.security.web.access.ExceptionTranslationFilter@52c6e959, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@541897c6]
+2022-02-18 02:18:48.702 DEBUG 27520 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-18 02:18:48.748 DEBUG 27520 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2022-02-18 02:18:48.770 DEBUG 27520 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-18 02:18:48.777 DEBUG 27520 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-18 02:18:48.880  INFO 27520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-18 02:18:48.888  INFO 27520 --- [main] com.itzikbarabie.moni.MoniApplication    : Started MoniApplication in 2.987 seconds (JVM running for 3.717)
+2022-02-18 02:18:51.525  INFO 27520 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-18 02:18:51.526  INFO 27520 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-18 02:18:51.527 DEBUG 27520 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-02-18 02:18:51.528 DEBUG 27520 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-02-18 02:18:51.529 DEBUG 27520 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-02-18 02:18:51.530 DEBUG 27520 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2dbcee03
+2022-02-18 02:18:51.531 DEBUG 27520 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@284f25e6
+2022-02-18 02:18:51.531 DEBUG 27520 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-02-18 02:18:51.531  INFO 27520 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-02-18 02:18:51.552 DEBUG 27520 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
+2022-02-18 02:18:51.556 DEBUG 27520 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.itzikbarabie.moni.Controllers.AuthController#login(AuthenticationRequest)
+2022-02-18 02:18:51.631 DEBUG 27520 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthenticationRequest(username=esh3k12, password=123456)]
+2022-02-18 02:18:51.918  INFO 27520 --- [http-nio-8080-exec-2] c.i.m.Services.AuthenticateServiceImpl   : ~Authenticate: User Not Found!
+2022-02-18 02:18:52.058 DEBUG 27520 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.itzikbarabie.moni.Handlers.RestErrorHandler#handleCustomException(Exception)
+2022-02-18 02:18:52.058  INFO 27520 --- [http-nio-8080-exec-2] c.i.moni.Handlers.RestErrorHandler       : com.itzikbarabie.moni.Controllers.AuthController.login(AuthController.java:42) Has Retreive an a exception: Invalid details!
+2022-02-18 02:18:52.075 DEBUG 27520 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-02-18 02:18:52.076 DEBUG 27520 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.itzikbarabie.moni.Entity.ExceptionResponseEntity@42a9d29f]
+2022-02-18 02:18:52.090 DEBUG 27520 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.itzikbarabie.moni.Exceptions.UnauthorizedException: Invalid details!]
+2022-02-18 02:18:52.091 DEBUG 27520 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2022-02-18 02:19:25.809  INFO 17764 --- [main] com.itzikbarabie.moni.MoniApplication    : Starting MoniApplication using Java 16.0.1 on LAPTOP-B76CQGAO with PID 17764 (C:\Users\97252\Desktop\moni\moni\target\classes started by 97252 in C:\Users\97252\Desktop\moni\moni)
+2022-02-18 02:19:25.814  INFO 17764 --- [main] com.itzikbarabie.moni.MoniApplication    : No active profile set, falling back to default profiles: default
+2022-02-18 02:19:26.409  INFO 17764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-18 02:19:26.459  INFO 17764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2022-02-18 02:19:26.889  INFO 17764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-18 02:19:26.896  INFO 17764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-18 02:19:26.896  INFO 17764 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 02:19:27.003  INFO 17764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-18 02:19:27.004  INFO 17764 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1144 ms
+2022-02-18 02:19:27.147  INFO 17764 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-18 02:19:27.185  INFO 17764 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-18 02:19:27.295  INFO 17764 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-18 02:19:27.365  INFO 17764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-18 02:19:27.468  INFO 17764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-18 02:19:27.481  INFO 17764 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-02-18 02:19:27.895  INFO 17764 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-18 02:19:27.903  INFO 17764 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-18 02:19:28.218  WARN 17764 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 02:19:28.382  INFO 17764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e8aea7e, org.springframework.security.web.context.SecurityContextPersistenceFilter@4d79d187, org.springframework.security.web.header.HeaderWriterFilter@3436d3d7, org.springframework.security.web.authentication.logout.LogoutFilter@43fbc2bf, com.itzikbarabie.moni.Security.JwtRequestFilter@1c0cf193, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48144f1a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e6c8854, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59282dc6, org.springframework.security.web.session.SessionManagementFilter@4be7acd9, org.springframework.security.web.access.ExceptionTranslationFilter@19d9ba89, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6b15e68c]
+2022-02-18 02:19:28.494 DEBUG 17764 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-18 02:19:28.551 DEBUG 17764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2022-02-18 02:19:28.578 DEBUG 17764 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-18 02:19:28.586 DEBUG 17764 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-18 02:19:28.702  INFO 17764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-18 02:19:28.715  INFO 17764 --- [main] com.itzikbarabie.moni.MoniApplication    : Started MoniApplication in 3.257 seconds (JVM running for 4.106)
+2022-02-18 02:19:30.927  INFO 17764 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-18 02:19:30.928  INFO 17764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-18 02:19:30.928 DEBUG 17764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-02-18 02:19:30.929 DEBUG 17764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-02-18 02:19:30.929 DEBUG 17764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-02-18 02:19:30.929 DEBUG 17764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6cd6698b
+2022-02-18 02:19:30.929 DEBUG 17764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@52325940
+2022-02-18 02:19:30.930 DEBUG 17764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-02-18 02:19:30.930  INFO 17764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-02-18 02:19:30.954 DEBUG 17764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
+2022-02-18 02:19:30.961 DEBUG 17764 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.itzikbarabie.moni.Controllers.AuthController#login(AuthenticationRequest)
+2022-02-18 02:19:31.050 DEBUG 17764 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthenticationRequest(username=esh3k12, password=123456)]
+2022-02-18 02:19:31.343  INFO 17764 --- [http-nio-8080-exec-1] c.i.m.Services.AuthenticateServiceImpl   : ~Authenticate: User Not Found!
+2022-02-18 02:19:31.471 DEBUG 17764 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.itzikbarabie.moni.Handlers.RestErrorHandler#handleCustomException(Exception)
+2022-02-18 02:19:31.471  INFO 17764 --- [http-nio-8080-exec-1] c.i.moni.Handlers.RestErrorHandler       : com.itzikbarabie.moni.Controllers.AuthController.login(AuthController.java:42) Has Retreive an a exception: Invalid details!
+2022-02-18 02:19:31.487 DEBUG 17764 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-02-18 02:19:31.487 DEBUG 17764 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.itzikbarabie.moni.Entity.ExceptionResponseEntity@21dfa763]
+2022-02-18 02:19:31.500 DEBUG 17764 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.itzikbarabie.moni.Exceptions.UnauthorizedException: Invalid details!]
+2022-02-18 02:19:31.500 DEBUG 17764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2022-02-18 02:20:17.495 ERROR 9156 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [STDOUT]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [STDOUT]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.itzikbarabie.moni.MoniApplication.main(MoniApplication.java:12)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [STDOUT]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [STDOUT]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	... 18 common frames omitted
+
+2022-02-18 02:20:27.419 ERROR 28020 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [STDOUT]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [STDOUT]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.itzikbarabie.moni.MoniApplication.main(MoniApplication.java:12)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [STDOUT]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [STDOUT]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	... 18 common frames omitted
+
+2022-02-18 02:21:25.680 ERROR 20196 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.classic.PatternLayout("null") - Empty or null pattern.
+ERROR in ch.qos.logback.classic.PatternLayout("null") - Empty or null pattern.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.itzikbarabie.moni.MoniApplication.main(MoniApplication.java:12)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.classic.PatternLayout("null") - Empty or null pattern.
+ERROR in ch.qos.logback.classic.PatternLayout("null") - Empty or null pattern.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	... 18 common frames omitted
+
+2022-02-18 02:21:31.183  INFO 25984 --- [main] com.itzikbarabie.moni.MoniApplication    : Starting MoniApplication using Java 16.0.1 on LAPTOP-B76CQGAO with PID 25984 (C:\Users\97252\Desktop\moni\moni\target\classes started by 97252 in C:\Users\97252\Desktop\moni\moni)
+2022-02-18 02:21:31.186  INFO 25984 --- [main] com.itzikbarabie.moni.MoniApplication    : No active profile set, falling back to default profiles: default
+2022-02-18 02:21:31.714  INFO 25984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-18 02:21:31.756  INFO 25984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+2022-02-18 02:21:32.136  INFO 25984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-18 02:21:32.143  INFO 25984 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-18 02:21:32.143  INFO 25984 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 02:21:32.239  INFO 25984 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-18 02:21:32.241  INFO 25984 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1015 ms
+2022-02-18 02:21:32.393  INFO 25984 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-18 02:21:32.435  INFO 25984 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-18 02:21:32.525  INFO 25984 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-18 02:21:32.579  INFO 25984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-18 02:21:32.675  INFO 25984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-18 02:21:32.686  INFO 25984 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-02-18 02:21:33.055  INFO 25984 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-18 02:21:33.063  INFO 25984 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-18 02:21:33.322  WARN 25984 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 02:21:33.450  INFO 25984 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13c81bc5, org.springframework.security.web.context.SecurityContextPersistenceFilter@60ef30b1, org.springframework.security.web.header.HeaderWriterFilter@10f10230, org.springframework.security.web.authentication.logout.LogoutFilter@62f7d7bd, com.itzikbarabie.moni.Security.JwtRequestFilter@6f17dd06, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f40568e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4fef4f96, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5617168c, org.springframework.security.web.session.SessionManagementFilter@484876a1, org.springframework.security.web.access.ExceptionTranslationFilter@336070ab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@46b2a11a]
+2022-02-18 02:21:33.536 DEBUG 25984 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-18 02:21:33.576 DEBUG 25984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2022-02-18 02:21:33.599 DEBUG 25984 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-18 02:21:33.605 DEBUG 25984 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-18 02:21:33.699  INFO 25984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-18 02:21:33.707  INFO 25984 --- [main] com.itzikbarabie.moni.MoniApplication    : Started MoniApplication in 2.846 seconds (JVM running for 3.544)
+2022-02-18 02:21:37.423  INFO 25984 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-18 02:21:37.423  INFO 25984 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-18 02:21:37.424 DEBUG 25984 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-02-18 02:21:37.425 DEBUG 25984 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-02-18 02:21:37.425 DEBUG 25984 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-02-18 02:21:37.425 DEBUG 25984 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@f5167f0
+2022-02-18 02:21:37.426 DEBUG 25984 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3f3f554f
+2022-02-18 02:21:37.427 DEBUG 25984 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-02-18 02:21:37.427  INFO 25984 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-02-18 02:21:37.452 DEBUG 25984 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
+2022-02-18 02:21:37.457 DEBUG 25984 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.itzikbarabie.moni.Controllers.AuthController#login(AuthenticationRequest)
+2022-02-18 02:21:37.535 DEBUG 25984 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthenticationRequest(username=esh3k12, password=123456)]
+2022-02-18 02:21:37.840  INFO 25984 --- [http-nio-8080-exec-2] c.i.m.Services.AuthenticateServiceImpl   : ~Authenticate: User Not Found!
+2022-02-18 02:21:37.969 DEBUG 25984 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.itzikbarabie.moni.Handlers.RestErrorHandler#handleCustomException(Exception)
+2022-02-18 02:21:37.970  INFO 25984 --- [http-nio-8080-exec-2] c.i.moni.Handlers.RestErrorHandler       : com.itzikbarabie.moni.Controllers.AuthController.login(AuthController.java:42) Has Retreive an a exception: Invalid details!
+2022-02-18 02:21:37.987 DEBUG 25984 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-02-18 02:21:37.987 DEBUG 25984 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.itzikbarabie.moni.Entity.ExceptionResponseEntity@d28e3d0]
+2022-02-18 02:21:38.003 DEBUG 25984 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.itzikbarabie.moni.Exceptions.UnauthorizedException: Invalid details!]
+2022-02-18 02:21:38.004 DEBUG 25984 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2022-02-18 02:22:08.607  INFO 26348 --- [main] com.itzikbarabie.moni.MoniApplication    : Starting MoniApplication using Java 16.0.1 on LAPTOP-B76CQGAO with PID 26348 (C:\Users\97252\Desktop\moni\moni\target\classes started by 97252 in C:\Users\97252\Desktop\moni\moni)
+2022-02-18 02:22:08.609  INFO 26348 --- [main] com.itzikbarabie.moni.MoniApplication    : No active profile set, falling back to default profiles: default
+2022-02-18 02:22:09.221  INFO 26348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-18 02:22:09.278  INFO 26348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2022-02-18 02:22:09.704  INFO 26348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-18 02:22:09.715  INFO 26348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-18 02:22:09.715  INFO 26348 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 02:22:09.814  INFO 26348 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-18 02:22:09.815  INFO 26348 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1161 ms
+2022-02-18 02:22:09.963  INFO 26348 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-18 02:22:10.000  INFO 26348 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-18 02:22:10.099  INFO 26348 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-18 02:22:10.165  INFO 26348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-18 02:22:10.263  INFO 26348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-18 02:22:10.276  INFO 26348 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-02-18 02:22:10.742  INFO 26348 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-18 02:22:10.749  INFO 26348 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-18 02:22:11.069  WARN 26348 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 02:22:11.228  INFO 26348 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8167f57, org.springframework.security.web.context.SecurityContextPersistenceFilter@3f40568e, org.springframework.security.web.header.HeaderWriterFilter@282c5075, org.springframework.security.web.authentication.logout.LogoutFilter@5c5c784c, com.itzikbarabie.moni.Security.JwtRequestFilter@6f17dd06, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37b470df, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d3b4e09, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75da2db, org.springframework.security.web.session.SessionManagementFilter@60ef30b1, org.springframework.security.web.access.ExceptionTranslationFilter@6be80629, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@50d05167]
+2022-02-18 02:22:11.324 DEBUG 26348 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-18 02:22:11.371 DEBUG 26348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2022-02-18 02:22:11.394 DEBUG 26348 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-18 02:22:11.401 DEBUG 26348 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-18 02:22:11.502  INFO 26348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-18 02:22:11.512  INFO 26348 --- [main] com.itzikbarabie.moni.MoniApplication    : Started MoniApplication in 3.292 seconds (JVM running for 4.294)
+2022-02-18 02:22:13.494  INFO 26348 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-18 02:22:13.495  INFO 26348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-18 02:22:13.496 DEBUG 26348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-02-18 02:22:13.497 DEBUG 26348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-02-18 02:22:13.497 DEBUG 26348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-02-18 02:22:13.497 DEBUG 26348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6b576ff8
+2022-02-18 02:22:13.499 DEBUG 26348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@467cd4b9
+2022-02-18 02:22:13.499 DEBUG 26348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-02-18 02:22:13.500  INFO 26348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-02-18 02:22:13.530 DEBUG 26348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
+2022-02-18 02:22:13.534 DEBUG 26348 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.itzikbarabie.moni.Controllers.AuthController#login(AuthenticationRequest)
+2022-02-18 02:22:13.614 DEBUG 26348 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthenticationRequest(username=esh3k12, password=123456)]
+2022-02-18 02:22:13.894  INFO 26348 --- [http-nio-8080-exec-1] c.i.m.Services.AuthenticateServiceImpl   : ~Authenticate: User Not Found!
+2022-02-18 02:22:14.031 DEBUG 26348 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.itzikbarabie.moni.Handlers.RestErrorHandler#handleCustomException(Exception)
+2022-02-18 02:22:14.032  INFO 26348 --- [http-nio-8080-exec-1] c.i.moni.Handlers.RestErrorHandler       : com.itzikbarabie.moni.Controllers.AuthController.login(AuthController.java:42) Has Retreive an a exception: Invalid details!
+2022-02-18 02:22:14.047 DEBUG 26348 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-02-18 02:22:14.048 DEBUG 26348 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.itzikbarabie.moni.Entity.ExceptionResponseEntity@64896306]
+2022-02-18 02:22:14.059 DEBUG 26348 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.itzikbarabie.moni.Exceptions.UnauthorizedException: Invalid details!]
+2022-02-18 02:22:14.060 DEBUG 26348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2022-02-18 02:22:55.207  INFO 16820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-18 02:22:55.249  INFO 16820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+2022-02-18 02:22:55.631  INFO 16820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-18 02:22:55.638  INFO 16820 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-18 02:22:55.639  INFO 16820 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 02:22:55.725  INFO 16820 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-18 02:22:55.725  INFO 16820 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1036 ms
+2022-02-18 02:22:55.854  INFO 16820 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-18 02:22:55.891  INFO 16820 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-18 02:22:55.993  INFO 16820 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-18 02:22:56.052  INFO 16820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-18 02:22:56.145  INFO 16820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-18 02:22:56.157  INFO 16820 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-02-18 02:22:56.517  INFO 16820 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-18 02:22:56.522  INFO 16820 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-18 02:22:56.784  WARN 16820 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 02:22:56.909  INFO 16820 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5617168c, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e47a71e, org.springframework.security.web.header.HeaderWriterFilter@2ed35f24, org.springframework.security.web.authentication.logout.LogoutFilter@6a299b9d, com.itzikbarabie.moni.Security.JwtRequestFilter@441aa7ae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@359ea595, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5dc9d25a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8167f57, org.springframework.security.web.session.SessionManagementFilter@3436d3d7, org.springframework.security.web.access.ExceptionTranslationFilter@20a4cba7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@55c8fc60]
+2022-02-18 02:22:56.985 DEBUG 16820 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-18 02:22:57.030 DEBUG 16820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2022-02-18 02:22:57.049 DEBUG 16820 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-18 02:22:57.055 DEBUG 16820 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-18 02:22:57.143  INFO 16820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-18 02:23:01.095  INFO 16820 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-18 02:23:01.095  INFO 16820 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-18 02:23:01.096 DEBUG 16820 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-02-18 02:23:01.096 DEBUG 16820 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-02-18 02:23:01.096 DEBUG 16820 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-02-18 02:23:01.097 DEBUG 16820 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@353422fd
+2022-02-18 02:23:01.097 DEBUG 16820 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2a341e3d
+2022-02-18 02:23:01.097 DEBUG 16820 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-02-18 02:23:01.097  INFO 16820 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-02-18 02:23:01.122 DEBUG 16820 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
+2022-02-18 02:23:01.127 DEBUG 16820 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.itzikbarabie.moni.Controllers.AuthController#login(AuthenticationRequest)
+2022-02-18 02:23:01.197 DEBUG 16820 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthenticationRequest(username=esh3k12, password=123456)]
+2022-02-18 02:23:01.600 DEBUG 16820 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.itzikbarabie.moni.Handlers.RestErrorHandler#handleCustomException(Exception)
+2022-02-18 02:23:01.622 DEBUG 16820 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-02-18 02:23:01.622 DEBUG 16820 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.itzikbarabie.moni.Entity.ExceptionResponseEntity@7767ccae]
+2022-02-18 02:23:01.632 DEBUG 16820 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.itzikbarabie.moni.Exceptions.UnauthorizedException: Invalid details!]
+2022-02-18 02:23:01.632 DEBUG 16820 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2022-02-18 02:23:26.066  INFO 18640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-18 02:23:26.115  INFO 18640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2022-02-18 02:23:26.525  INFO 18640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-18 02:23:26.532  INFO 18640 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-18 02:23:26.532  INFO 18640 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 02:23:26.627  INFO 18640 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-18 02:23:26.627  INFO 18640 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1099 ms
+2022-02-18 02:23:26.756  INFO 18640 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-18 02:23:26.784  INFO 18640 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-18 02:23:26.885  INFO 18640 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-18 02:23:26.950  INFO 18640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-18 02:23:27.046  INFO 18640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-18 02:23:27.058  INFO 18640 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-02-18 02:23:27.467  INFO 18640 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-18 02:23:27.472  INFO 18640 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-18 02:23:27.730  WARN 18640 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 02:23:27.850  INFO 18640 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d3546f9, org.springframework.security.web.context.SecurityContextPersistenceFilter@686fb58a, org.springframework.security.web.header.HeaderWriterFilter@19d9ba89, org.springframework.security.web.authentication.logout.LogoutFilter@bcd9ed6, com.itzikbarabie.moni.Security.JwtRequestFilter@190bf8e4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4be7acd9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4fa6fb7f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50ecef36, org.springframework.security.web.session.SessionManagementFilter@3d3b4e09, org.springframework.security.web.access.ExceptionTranslationFilter@4b475742, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3ad558bf]
+2022-02-18 02:23:27.936 DEBUG 18640 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-18 02:23:27.984 DEBUG 18640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2022-02-18 02:23:28.005 DEBUG 18640 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-18 02:23:28.012 DEBUG 18640 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-18 02:23:28.097  INFO 18640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-18 02:23:40.861  INFO 18640 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-18 02:23:40.862  INFO 18640 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-18 02:23:40.864 DEBUG 18640 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-02-18 02:23:40.864 DEBUG 18640 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-02-18 02:23:40.865 DEBUG 18640 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-02-18 02:23:40.866 DEBUG 18640 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6c8672b9
+2022-02-18 02:23:40.868 DEBUG 18640 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@285b491f
+2022-02-18 02:23:40.868 DEBUG 18640 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-02-18 02:23:40.868  INFO 18640 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-02-18 02:23:40.888 DEBUG 18640 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
+2022-02-18 02:23:40.894 DEBUG 18640 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.itzikbarabie.moni.Controllers.AuthController#login(AuthenticationRequest)
+2022-02-18 02:23:40.966 DEBUG 18640 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthenticationRequest(username=esh3k12, password=123456)]
+2022-02-18 02:23:41.356 DEBUG 18640 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.itzikbarabie.moni.Handlers.RestErrorHandler#handleCustomException(Exception)
+2022-02-18 02:23:41.372 DEBUG 18640 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-02-18 02:23:41.373 DEBUG 18640 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.itzikbarabie.moni.Entity.ExceptionResponseEntity@56cc64bd]
+2022-02-18 02:23:41.387 DEBUG 18640 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.itzikbarabie.moni.Exceptions.UnauthorizedException: Invalid details!]
+2022-02-18 02:23:41.387 DEBUG 18640 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2022-02-18 02:23:42.232 DEBUG 18640 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
+2022-02-18 02:23:42.233 DEBUG 18640 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.itzikbarabie.moni.Controllers.AuthController#login(AuthenticationRequest)
+2022-02-18 02:23:42.234 DEBUG 18640 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthenticationRequest(username=esh3k12, password=123456)]
+2022-02-18 02:23:42.366 DEBUG 18640 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.itzikbarabie.moni.Handlers.RestErrorHandler#handleCustomException(Exception)
+2022-02-18 02:23:42.367 DEBUG 18640 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-02-18 02:23:42.368 DEBUG 18640 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.itzikbarabie.moni.Entity.ExceptionResponseEntity@2225be1a]
+2022-02-18 02:23:42.369 DEBUG 18640 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.itzikbarabie.moni.Exceptions.UnauthorizedException: Invalid details!]
+2022-02-18 02:23:42.369 DEBUG 18640 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2022-02-18 02:23:43.082 DEBUG 18640 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
+2022-02-18 02:23:43.083 DEBUG 18640 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.itzikbarabie.moni.Controllers.AuthController#login(AuthenticationRequest)
+2022-02-18 02:23:43.085 DEBUG 18640 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthenticationRequest(username=esh3k12, password=123456)]
+2022-02-18 02:23:43.207 DEBUG 18640 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.itzikbarabie.moni.Handlers.RestErrorHandler#handleCustomException(Exception)
+2022-02-18 02:23:43.208 DEBUG 18640 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-02-18 02:23:43.209 DEBUG 18640 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.itzikbarabie.moni.Entity.ExceptionResponseEntity@285e2f55]
+2022-02-18 02:23:43.210 DEBUG 18640 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.itzikbarabie.moni.Exceptions.UnauthorizedException: Invalid details!]
+2022-02-18 02:23:43.211 DEBUG 18640 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2022-02-18 02:23:43.867 DEBUG 18640 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
+2022-02-18 02:23:43.868 DEBUG 18640 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.itzikbarabie.moni.Controllers.AuthController#login(AuthenticationRequest)
+2022-02-18 02:23:43.869 DEBUG 18640 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthenticationRequest(username=esh3k12, password=123456)]
+2022-02-18 02:23:44.002 DEBUG 18640 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.itzikbarabie.moni.Handlers.RestErrorHandler#handleCustomException(Exception)
+2022-02-18 02:23:44.002 DEBUG 18640 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-02-18 02:23:44.003 DEBUG 18640 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.itzikbarabie.moni.Entity.ExceptionResponseEntity@65486c05]
+2022-02-18 02:23:44.004 DEBUG 18640 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.itzikbarabie.moni.Exceptions.UnauthorizedException: Invalid details!]
+2022-02-18 02:23:44.004 DEBUG 18640 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2022-02-18 02:23:44.659 DEBUG 18640 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
+2022-02-18 02:23:44.659 DEBUG 18640 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.itzikbarabie.moni.Controllers.AuthController#login(AuthenticationRequest)
+2022-02-18 02:23:44.660 DEBUG 18640 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthenticationRequest(username=esh3k12, password=123456)]
+2022-02-18 02:23:44.789 DEBUG 18640 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.itzikbarabie.moni.Handlers.RestErrorHandler#handleCustomException(Exception)
+2022-02-18 02:23:44.790 DEBUG 18640 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-02-18 02:23:44.791 DEBUG 18640 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.itzikbarabie.moni.Entity.ExceptionResponseEntity@46af3f29]
+2022-02-18 02:23:44.791 DEBUG 18640 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.itzikbarabie.moni.Exceptions.UnauthorizedException: Invalid details!]
+2022-02-18 02:23:44.792 DEBUG 18640 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2022-02-18 02:24:49.476  INFO 26280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-18 02:24:49.516  INFO 26280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interfaces.
+2022-02-18 02:24:49.867  INFO 26280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-18 02:24:49.874  INFO 26280 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-18 02:24:49.875  INFO 26280 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 02:24:49.959  INFO 26280 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-18 02:24:49.959  INFO 26280 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1004 ms
+2022-02-18 02:24:50.075  INFO 26280 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-18 02:24:50.102  INFO 26280 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-18 02:24:50.199  INFO 26280 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-18 02:24:50.258  INFO 26280 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-18 02:24:50.353  INFO 26280 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-18 02:24:50.367  INFO 26280 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-02-18 02:24:50.731  INFO 26280 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-18 02:24:50.736  INFO 26280 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-18 02:24:50.983  WARN 26280 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 02:24:51.131  INFO 26280 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75da2db, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e47a71e, org.springframework.security.web.header.HeaderWriterFilter@2ed35f24, org.springframework.security.web.authentication.logout.LogoutFilter@6a299b9d, com.itzikbarabie.moni.Security.JwtRequestFilter@7977f046, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@359ea595, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5dc9d25a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@541897c6, org.springframework.security.web.session.SessionManagementFilter@3436d3d7, org.springframework.security.web.access.ExceptionTranslationFilter@20a4cba7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1da32baf]
+2022-02-18 02:24:51.224 DEBUG 26280 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-18 02:24:51.264 DEBUG 26280 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2022-02-18 02:24:51.283 DEBUG 26280 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-18 02:24:51.289 DEBUG 26280 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-18 02:24:51.371  INFO 26280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-18 02:25:07.051  INFO 26280 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-18 02:25:07.052  INFO 26280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-18 02:25:07.052 DEBUG 26280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-02-18 02:25:07.053 DEBUG 26280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-02-18 02:25:07.053 DEBUG 26280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-02-18 02:25:07.054 DEBUG 26280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@25e8a111
+2022-02-18 02:25:07.056 DEBUG 26280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@69a3bf40
+2022-02-18 02:25:07.057 DEBUG 26280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-02-18 02:25:07.057  INFO 26280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-02-18 02:25:07.078 DEBUG 26280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
+2022-02-18 02:25:07.084 DEBUG 26280 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.itzikbarabie.moni.Controllers.AuthController#login(AuthenticationRequest)
+2022-02-18 02:25:07.156 DEBUG 26280 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthenticationRequest(username=esh3k12, password=123456)]
+2022-02-18 02:25:07.568 DEBUG 26280 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.itzikbarabie.moni.Handlers.RestErrorHandler#handleCustomException(Exception)
+2022-02-18 02:25:07.586 DEBUG 26280 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-02-18 02:25:07.587 DEBUG 26280 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.itzikbarabie.moni.Entity.ExceptionResponseEntity@32b314e]
+2022-02-18 02:25:07.600 DEBUG 26280 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.itzikbarabie.moni.Exceptions.UnauthorizedException: Invalid details!]
+2022-02-18 02:25:07.601 DEBUG 26280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2022-02-18 02:25:29.839  INFO 23628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-18 02:25:29.888  INFO 23628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2022-02-18 02:25:30.294  INFO 23628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-18 02:25:30.301  INFO 23628 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-18 02:25:30.302  INFO 23628 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 02:25:30.386  INFO 23628 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-18 02:25:30.386  INFO 23628 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1052 ms
+2022-02-18 02:25:30.510  INFO 23628 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-18 02:25:30.541  INFO 23628 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-18 02:25:30.642  INFO 23628 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-18 02:25:30.709  INFO 23628 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-18 02:25:30.793  INFO 23628 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-18 02:25:30.805  INFO 23628 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-02-18 02:25:31.178  INFO 23628 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-18 02:25:31.187  INFO 23628 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-18 02:25:31.434  WARN 23628 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 02:25:31.556  INFO 23628 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e8aea7e, org.springframework.security.web.context.SecurityContextPersistenceFilter@4d79d187, org.springframework.security.web.header.HeaderWriterFilter@3436d3d7, org.springframework.security.web.authentication.logout.LogoutFilter@43fbc2bf, com.itzikbarabie.moni.Security.JwtRequestFilter@24258b54, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48144f1a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e6c8854, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59282dc6, org.springframework.security.web.session.SessionManagementFilter@4be7acd9, org.springframework.security.web.access.ExceptionTranslationFilter@19d9ba89, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6b15e68c]
+2022-02-18 02:25:31.642 DEBUG 23628 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-18 02:25:31.688 DEBUG 23628 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2022-02-18 02:25:31.712 DEBUG 23628 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-18 02:25:31.718 DEBUG 23628 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-18 02:25:31.802  INFO 23628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-18 02:25:58.519  INFO 23104 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-18 02:25:58.560  INFO 23104 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+2022-02-18 02:25:58.951  INFO 23104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-18 02:25:58.957  INFO 23104 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-18 02:25:58.957  INFO 23104 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 02:25:59.046  INFO 23104 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-18 02:25:59.047  INFO 23104 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1009 ms
+2022-02-18 02:25:59.173  INFO 23104 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-18 02:25:59.205  INFO 23104 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-18 02:25:59.305  INFO 23104 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-18 02:25:59.365  INFO 23104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-18 02:25:59.465  INFO 23104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-18 02:25:59.476  INFO 23104 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-02-18 02:25:59.861  INFO 23104 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-18 02:25:59.868  INFO 23104 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-18 02:26:00.156  WARN 23104 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 02:26:00.279  INFO 23104 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@42cf5a6f, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f7b8ae1, org.springframework.security.web.header.HeaderWriterFilter@37b470df, org.springframework.security.web.authentication.logout.LogoutFilter@440461ef, com.itzikbarabie.moni.Security.JwtRequestFilter@3c65f00e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4fa6fb7f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79fcd194, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b2f8152, org.springframework.security.web.session.SessionManagementFilter@3e63bd6b, org.springframework.security.web.access.ExceptionTranslationFilter@60ef30b1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@59d0fac9]
+2022-02-18 02:26:00.359 DEBUG 23104 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-18 02:26:00.406 DEBUG 23104 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2022-02-18 02:26:00.427 DEBUG 23104 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-18 02:26:00.434 DEBUG 23104 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-18 02:26:00.521  INFO 23104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-18 02:26:03.225  INFO 23104 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-18 02:26:03.226  INFO 23104 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-18 02:26:03.227 DEBUG 23104 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-02-18 02:26:03.227 DEBUG 23104 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-02-18 02:26:03.227 DEBUG 23104 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-02-18 02:26:03.228 DEBUG 23104 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2114eb1a
+2022-02-18 02:26:03.229 DEBUG 23104 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@254cc548
+2022-02-18 02:26:03.229 DEBUG 23104 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-02-18 02:26:03.229  INFO 23104 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-02-18 02:26:03.256 DEBUG 23104 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
+2022-02-18 02:26:03.259 DEBUG 23104 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.itzikbarabie.moni.Controllers.AuthController#login(AuthenticationRequest)
+2022-02-18 02:26:03.317 DEBUG 23104 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthenticationRequest(username=esh3k12, password=123456)]
+2022-02-18 02:26:03.739 DEBUG 23104 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.itzikbarabie.moni.Handlers.RestErrorHandler#handleCustomException(Exception)
+2022-02-18 02:26:03.754 DEBUG 23104 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-02-18 02:26:03.755 DEBUG 23104 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.itzikbarabie.moni.Entity.ExceptionResponseEntity@59b51f2a]
+2022-02-18 02:26:03.766 DEBUG 23104 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.itzikbarabie.moni.Exceptions.UnauthorizedException: Invalid details!]
+2022-02-18 02:26:03.768 DEBUG 23104 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2022-02-18 02:26:42.635  INFO 28572 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-18 02:26:42.683  INFO 28572 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2022-02-18 02:26:43.044  INFO 28572 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-18 02:26:43.049  INFO 28572 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-18 02:26:43.050  INFO 28572 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 02:26:43.139  INFO 28572 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-18 02:26:43.139  INFO 28572 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 987 ms
+2022-02-18 02:26:43.263  INFO 28572 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-18 02:26:43.292  INFO 28572 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-18 02:26:43.384  INFO 28572 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-18 02:26:43.543  INFO 28572 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-02-18 02:26:43.947  INFO 28572 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-18 02:26:43.952  INFO 28572 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-18 02:26:44.210  WARN 28572 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 02:26:44.339  INFO 28572 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59d0fac9, org.springframework.security.web.context.SecurityContextPersistenceFilter@5dc9d25a, org.springframework.security.web.header.HeaderWriterFilter@68550d86, org.springframework.security.web.authentication.logout.LogoutFilter@40fee459, com.itzikbarabie.moni.Security.JwtRequestFilter@7a8b7e11, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c4be45f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c8d8b60, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d3546f9, org.springframework.security.web.session.SessionManagementFilter@7c871ce4, org.springframework.security.web.access.ExceptionTranslationFilter@52c6e959, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@541897c6]
+2022-02-18 02:26:44.591  INFO 28572 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''

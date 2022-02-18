@@ -2,7 +2,6 @@ package com.itzikbarabie.moni.Model;
 
 import lombok.Data;
 
-import java.util.ArrayList;
 import java.util.Date;
 
 @Data
@@ -13,7 +12,7 @@ public class UserDto extends BaseEntityDto{
     private String password;
     private String firstName;
     private String lastName;
-    private int permission;
+    private String roles;
     private Date expirationDate;
 
 }

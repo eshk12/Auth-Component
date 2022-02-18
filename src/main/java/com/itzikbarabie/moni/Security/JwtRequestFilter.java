@@ -1,8 +1,11 @@
 package com.itzikbarabie.moni.Security;
 
-import com.itzikbarabie.moni.Services.AuthenticateService;
+
+import com.itzikbarabie.moni.Services.AuthenticateServiceImpl;
 import com.itzikbarabie.moni.Utils.JwtUtil;
+import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.SignatureException;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -18,9 +21,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @Component
+@Slf4j
 public class JwtRequestFilter extends OncePerRequestFilter {
     @Autowired
-    private AuthenticateService authenticateService;
+    private AuthenticateServiceImpl authenticateService;
 
     @Autowired
     private JwtUtil jwtUtil;
@@ -37,7 +41,15 @@ public class JwtRequestFilter extends OncePerRequestFilter {
                 jwt = authorizationHeader.substring(7);
                 try {
                     username = jwtUtil.extractUsername(jwt);
-                } catch (SignatureException e) {}
+                } catch (SignatureException e) {
+                    if(log.isInfoEnabled()) {
+                        log.info("~JWT: Invalid Token ~ Access Denied!");
+                    }
+                } catch (ExpiredJwtException e) {
+                    if(log.isInfoEnabled()) {
+                        log.info("~JWT: Expired Token ~ Access Denied!");
+                    }
+                }
             }
         }
 

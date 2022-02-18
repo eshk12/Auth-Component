@@ -6,7 +6,6 @@ import com.itzikbarabie.moni.Exceptions.CustomException;
 import com.itzikbarabie.moni.Model.UserDto;
 import com.itzikbarabie.moni.Repository.UserRepository;
 import com.itzikbarabie.moni.Utils.Definitions;
-import com.itzikbarabie.moni.Utils.PasswordManager;
 import com.itzikbarabie.moni.Utils.ObjectValidator;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +21,6 @@ public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
     @Autowired
     private Definitions definitions;
-    @Autowired
-    private PasswordManager passwordManager;
     @Autowired
     private ObjectValidator objectValidator;
     @Autowired
@@ -54,6 +51,10 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDto updateUser(UserDto userDto) throws CustomException {
+        objectValidator.isValidObjectId(userDto.getObjectId());
+        if(userDto.getRoles() != null) {
+            objectValidator.isValidRole(userDto.getRoles());
+        }
         if (!userRepository.existsByObjectId(userDto.getObjectId())) {
             throw new CustomException(definitions.USER_IS_NOT_EXISTS);
         } else {
@@ -65,14 +66,15 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public BasicResponseModel deleteUserByObjectId(long objectId, boolean deleted) throws CustomException {
+    public BasicResponseModel activeUserByObjectId(long objectId, boolean active) throws CustomException {
+        this.objectValidator.isValidObjectId(objectId);
         if (!userRepository.existsByObjectId(objectId)) {
             throw new CustomException(definitions.USER_IS_NOT_EXISTS);
         } else {
             User userToUpdate = userRepository.findUserByObjectId(objectId);
-            userToUpdate.setDeleted(deleted);
+            userToUpdate.setActive(active);
             userRepository.save(userToUpdate);
-            String responseMsg = (deleted) ? definitions.USER_DELETED : definitions.USER_RESTORED;
+            String responseMsg = (active) ? definitions.USER_ACTIVATED : definitions.USER_DEACTIVATED;
             return new BasicResponseModel(responseMsg);
         }
     }
@@ -85,6 +87,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDto findUserByObjectId(long objectId) throws CustomException {
+        this.objectValidator.isValidObjectId(objectId);
         if (!userRepository.existsByObjectId(objectId)) {
             throw new CustomException(definitions.USER_IS_NOT_EXISTS);
         } else {
@@ -94,6 +97,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDto findUserByUsername(String username) throws CustomException {
+        this.objectValidator.isValidString(username);
         if (!userRepository.existsByUsername(username)) {
             throw new CustomException(definitions.USER_IS_NOT_EXISTS);
         } else {

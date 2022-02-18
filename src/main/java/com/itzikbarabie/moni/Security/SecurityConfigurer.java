@@ -1,6 +1,6 @@
 package com.itzikbarabie.moni.Security;
 
-import com.itzikbarabie.moni.Services.AuthenticateService;
+import com.itzikbarabie.moni.Services.AuthenticateServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -16,7 +16,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @EnableWebSecurity
 public class SecurityConfigurer extends WebSecurityConfigurerAdapter {
     @Autowired
-    private AuthenticateService authenticateService;
+    private AuthenticateServiceImpl authenticateService;
 
     @Autowired
     private JwtRequestFilter jwtRequestFilter;
@@ -31,7 +31,8 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter {
         http.csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/auth/**").permitAll()
-                .antMatchers("/users/createUser").permitAll()//TODO REMOVE THIS LINE
+                .antMatchers("/users/createUser").permitAll()//todo fix in the future
+                .antMatchers("/users/**").hasRole( "ADMIN")
                 .anyRequest().authenticated()
                 .and().sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS);

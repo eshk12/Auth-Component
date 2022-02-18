@@ -3,7 +3,7 @@ package com.itzikbarabie.moni.Controllers;
 import com.itzikbarabie.moni.Exceptions.UnauthorizedException;
 import com.itzikbarabie.moni.Entity.AuthenticationRequest;
 import com.itzikbarabie.moni.Entity.AuthenticationResponse;
-import com.itzikbarabie.moni.Services.AuthenticateService;
+import com.itzikbarabie.moni.Services.AuthenticateServiceImpl;
 import com.itzikbarabie.moni.Utils.Definitions;
 import com.itzikbarabie.moni.Utils.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.*;
 public class AuthController {
 
     @Autowired
-    private AuthenticateService authenticateService;
+    private AuthenticateServiceImpl authenticateService;
 
     @Autowired
     private Definitions definitions;
@@ -47,14 +47,3 @@ public class AuthController {
                 .body(new AuthenticationResponse(jwtUtil.generateToken(userDetails)));
     }
 }
-
-
-
-
-        /*try{
-            authService.authenticate(authenticationRequest);
-            return ResponseEntity.ok()
-                    .body(new AuthenticationResponse("bla"));
-        } catch (UnauthorizedException e){
-            throw new UnauthorizedException(e.getMessage());
-        }*/

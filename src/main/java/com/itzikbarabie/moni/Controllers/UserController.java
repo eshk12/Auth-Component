@@ -37,12 +37,11 @@ public class UserController {
         }
     }
 
-    @PostMapping("/deleteUser")
-    //public ResponseEntity<?> deleteUser(@RequestParam Map<String, Long> objectId, @RequestParam Map<String, Boolean> deleted){
-    public ResponseEntity<?> deleteUser(@RequestBody User user){
+    @PostMapping("/activeUser")
+    public ResponseEntity<?> activeUser(@RequestBody User user){
         try{
             return ResponseEntity.ok()
-                    .body(userService.deleteUserByObjectId(user.getObjectId(), user.isDeleted()));
+                    .body(userService.activeUserByObjectId(user.getObjectId(), user.isActive()));
         }catch (CustomException e){
             throw new CustomException(e.getMessage());
         }

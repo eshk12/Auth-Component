@@ -13,7 +13,7 @@ public interface UserService {
 
     UserDto updateUser(UserDto userDto) throws CustomException;
 
-    BasicResponseModel deleteUserByObjectId(long objectId, boolean deleted) throws CustomException;
+    BasicResponseModel activeUserByObjectId(long objectId, boolean deleted) throws CustomException;
 
     List<UserDto> getAllUsers();
 
