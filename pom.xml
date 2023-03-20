@@ -14,16 +14,18 @@
 	<name>moni</name>
 	<description>PV monitor</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>18</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<version>2.6.3</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<version>2.6.3</version>
 		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
@@ -35,11 +37,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+			<version>2.6.3</version>
 		</dependency>
 		<dependency>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 			<groupId>org.springframework.boot</groupId>
-			<version>RELEASE</version>
+			<version>2.6.3</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
